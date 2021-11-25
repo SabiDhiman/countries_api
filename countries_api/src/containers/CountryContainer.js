@@ -22,7 +22,6 @@ const CountryContainer = () => {
     setCountry([...newCountries]);
 }
 
-
   return (
   country ?
     <>

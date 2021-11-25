@@ -1,0 +1,107 @@
+.sick-img {
+    animation: 1s swivel infinite;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 10;
+}
+
+.sick-img2 {
+    animation: 1s swivel infinite;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 10;
+}
+
+@keyframes swivel {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.social, .social2 {
+    width: 100px;
+    height: 72px;
+    margin-left: 100px;
+    margin-top: 7px;
+    background: url(https://images.lingscars.com/images/index/social-sprite.png);
+}
+
+.social {
+    background-position-y: 72px;
+    animation: 2s social-media-sprite steps(1) infinite;
+}
+
+.social2 {
+    animation: 2s social-media-sprite steps(1) infinite,1.5s wiggle infinite;
+}
+
+.social-container {
+    width: 120px;
+    height: 45px;
+    margin-top: 0;
+    position: absolute;
+    margin-left: 0;
+    z-index: 1000;
+}
+
+.social-container>* {
+    position: absolute;
+}
+
+@keyframes social-media-sprite {
+    50% {
+        background-position-x: 100px;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translate(2px, 1px);
+    }
+    
+    10% {
+        transform: translate(-1px, -2px);
+    }
+    20% {
+        transform: translate(-3px, 0px);
+    }
+    30% {
+        transform: translate(0px, 2px);
+    }
+    40% {
+        transform: translate(1px, -1px);
+    }
+    50% {
+        transform: translate(-1px, 2px);
+    }
+    60% {
+        transform: translate(-3px, 1px);
+    }
+    70% {
+        transform: translate(2px, 1px);
+    }
+    80% {
+        transform: translate(-1px, -1px);
+    }
+    90% {
+        transform: translate(1px, -2px);
+    }
+    100% {
+        transform: translate(2px, 1px);
+    }
+}
+
+.god {
+    position: absolute;
+    z-index: 6;
+    width: 104px;
+    animation: 1s wiggle infinite;
+}
